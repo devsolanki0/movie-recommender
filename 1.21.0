@@ -1,0 +1,6 @@
+Collecting numpy
+  Obtaining dependency information for numpy from https://files.pythonhosted.org/packages/46/69/8c4f928741c2a8efa255fdc7e9097527c6dc4e4df147e3cadc5d9357ce85/numpy-2.2.4-cp312-cp312-win_amd64.whl.metadata
+  Using cached numpy-2.2.4-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Using cached numpy-2.2.4-cp312-cp312-win_amd64.whl (12.6 MB)
+Installing collected packages: numpy
+Successfully installed numpy-2.2.4
