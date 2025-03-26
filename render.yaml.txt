@@ -1,0 +1,16 @@
+# render.yaml
+services:
+  - type: web
+    name: movie-recommender  # Your project name
+    runtime: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py migrate
+    startCommand: gunicorn movie_recommender.wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        value: your-secret-key-here  # Replace with a real key
+      - key: DEBUG
+        value: False  # Disable in production!
+      - key: ALLOWED_HOSTS
+        value: ".onrender.com"  # Allow Render's domain
